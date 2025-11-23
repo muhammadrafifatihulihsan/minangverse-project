@@ -1,0 +1,10 @@
+/* Subsection 1 */
+.subsection1 {
+	background-image: url("../../../assets/texture-arches.png");
+	background-color: #fef3d2;
+}
+
+/* section 1 */
+.section1 {
+	background-image: url("../../../assets/texture-pattern.png");
+}

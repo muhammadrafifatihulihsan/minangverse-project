@@ -23,7 +23,8 @@ const KamusTable = () => {
 	const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
 
 	const handlePlay = (voice) => {
-		const audio = new Audio(`/voices/${voice}.mp3`);
+		const audio = new Audio(`/voice_kamus/${voice}.aac`);
+
 		audio.play();
 	};
 

@@ -1,4 +1,4 @@
-export const funfactMinang = [
+export const funFact = [
 	{
 		id: 1,
 		title: "Sistem Kekerabatan Matrilineal",
@@ -71,4 +71,4 @@ export const funfactMinang = [
 	},
 ];
 
-export default funfactMinangs;
+export default funFact;

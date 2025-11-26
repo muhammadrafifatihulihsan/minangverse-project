@@ -3,6 +3,7 @@
 import StripBatik from "../../components/Internal/StripBatik";
 import "../../components/Internal/styling/Introduction.css";
 import Navbar from "../../components/Internal/Navbar";
+import Footer from "../../components/Internal/Footer";
 
 // Decorative Batik Strip Component
 const BatikStrip = () => (
@@ -98,11 +99,11 @@ const Introduction = ({ theme = null }) => {
 
 	return (
 		<>
-			<div>
-				<div className="fixed">
+			<StripBatik />
+			<div className="">
+				<div className="">
 					<Navbar />
 				</div>
-				<StripBatik />
 				<main style={{ backgroundColor: "var(--mv-white)" }}>
 					{/* ============ HERO HEADER ============ */}
 					<BatikStrip />
@@ -528,7 +529,7 @@ const Introduction = ({ theme = null }) => {
 
 					{/* ============ SECTION 6: STRUKTUR SOSIAL ============ */}
 					<section className="mv-section mv-bg-red-dark">
-						<div className="mv-container-lg">
+						<div className="mv-container-lg ">
 							<SectionHeader
 								number="6"
 								title="Struktur Sosial Minangkabau"
@@ -715,31 +716,9 @@ const Introduction = ({ theme = null }) => {
 
 					{/* ============ FOOTER ============ */}
 					<BatikStrip />
-					<footer className="mv-bg-red-dark mv-text-white mv-section">
-						<div className="mv-container-lg" style={{ textAlign: "center" }}>
-							<p className="mv-body-text" style={{ marginBottom: "1rem" }}>
-								<strong>Minangverse © 2025</strong>
-							</p>
-							<p
-								className="mv-body-text-lg"
-								style={{ fontStyle: "italic", color: "var(--mv-gold-1)" }}
-							>
-								Melestarikan Budaya Minangkabau untuk Generasi Masa Kini
-							</p>
-							<p
-								className="mv-body-text"
-								style={{
-									marginTop: "1rem",
-									fontSize: "0.85rem",
-									opacity: "0.9",
-								}}
-							>
-								"Adat Basandi Syarak, Syarak Basandi Kitabullah"
-							</p>
-						</div>
-					</footer>
 					<BatikStrip />
 				</main>
+				<Footer />
 				<StripBatik />
 			</div>
 		</>

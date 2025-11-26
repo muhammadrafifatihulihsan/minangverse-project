@@ -1,0 +1,12 @@
+.talemponglive {
+	background-image: url("../../../assets/texture-pattern.png");
+}
+.pop-active {
+	transform: translate(-50%, -50%) scale(1.2);
+	transition: transform 0.15s ease-out;
+}
+.pop-active {
+	transform: translate(-50%, -50%) scale(1.25);
+	filter: brightness(1.15);
+	transition: all 0.15s ease-out;
+}

@@ -63,11 +63,11 @@ const Section3 = () => {
 									className="w-full h-full object-cover"
 								/>
 							</figure>
-							<div className="card-body flex flex-col justify-between flex-grow">
+							<div className="card-body flex flex-col justify-between grow">
 								<h2 className="card-title text-lg font-semibold">
 									{card.title}
 								</h2>
-								<p className="text-sm mt-2 flex-grow">{card.desc}</p>
+								<p className="text-sm mt-2 grow">{card.desc}</p>
 								<div className="card-actions justify-end mt-2">
 									<button className="btn btn-soft btn-sm">Jelajahi</button>
 								</div>

@@ -10,6 +10,8 @@ import NotFound from "./Pages/NotFound/NotFound";
 import Kamus from "./Pages/Kamus/Kamus";
 import KartuKeberuntungan from "./Pages/KartuKeberuntungan/KartuKeberuntungan";
 import LiveChat from "./Pages/LiveChat/LiveChat";
+// sub pages
+import TalempongLive from "./Pages/Musik/AlatMusik/TalempongLive";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -24,6 +26,8 @@ function App() {
 					<Route path="/index" element={<LandingPage />} />
 					{/* music pages */}
 					<Route path="/alat" element={<Musik />} />
+					<Route path="/alat/talempong" element={<TalempongLive />} />
+
 					{/* sejarah */}
 					<Route path="/introduction" element={<Introduction />} />
 					{/* kamus */}

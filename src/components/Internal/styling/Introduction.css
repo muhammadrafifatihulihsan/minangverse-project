@@ -4,6 +4,31 @@
   Dukungan untuk dynamic theming via CSS variables
   Kompatibel dengan React 18+ 
 */
+.kepala {
+	position: relative;
+	background-color: #f5f5f5;
+	overflow: hidden;
+}
+
+.kepala::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url("../../../../public/rumah-hero.png");
+	background-size: 90% 80%;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	opacity: 0.8; /* TURUNKAN OPACITY DI SINI */
+	z-index: 0;
+	-webkit-mask-image: linear-gradient(to left, transparent, black 100%);
+	mask-image: linear-gradient(to left, transparent, black 100%);
+	right: -60px;
+}
+
+.kepala > * {
+	position: relative;
+	z-index: 1;
+}
 
 :root {
 	/* Palet Warna Utama */

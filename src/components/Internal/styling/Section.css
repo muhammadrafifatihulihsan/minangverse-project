@@ -8,3 +8,46 @@
 .section1 {
 	background-image: url("../../../assets/texture-pattern.png");
 }
+
+/* section 2 */
+.bgsection2 {
+	background-image: url("../../../assets/texture-arches.png");
+	margin-top: 0;
+}
+.container {
+	background-image: url("../../../assets/texture-arches.png");
+}
+
+/* .sectionfooter {
+	background-image: url("../../../assets/texture-arches.png");
+	} */
+.sectionfooter {
+	position: relative;
+	background-color: #f5f5f5;
+	overflow: hidden;
+}
+
+.sectionfooter::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url("../../../../public/rumah-hero.png");
+	background-size: 98% 98%;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	opacity: 0.8; /* TURUNKAN OPACITY DI SINI */
+	z-index: 0;
+	-webkit-mask-image: linear-gradient(to left, transparent, black 100%);
+	mask-image: linear-gradient(to left, transparent, black 100%);
+	right: -60px;
+}
+
+.sectionfooter > * {
+	position: relative;
+	z-index: 1;
+}
+
+.footernya {
+	background-image: url("../../../assets/texture-arches.png");
+	/* background-image: url("../../../assets/texture-pattern.png"); */
+}

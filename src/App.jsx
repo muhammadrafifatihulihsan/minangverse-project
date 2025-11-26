@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import "./styles/pallateColor.css";
 // Pages
 import Musik from "./Pages/Musik/Musik";
-import Sejarah from "./Pages/Sejarah/Sejarah";
+import Introduction from "./Pages/Introduction/Introduction";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import NotFound from "./Pages/NotFound/NotFound";
+import Kamus from "./Pages/Kamus/Kamus";
+import KartuKeberuntungan from "./Pages/KartuKeberuntungan/KartuKeberuntungan";
+import LiveChat from "./Pages/LiveChat/LiveChat";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -19,9 +23,15 @@ function App() {
 					<Route path="/main" element={<LandingPage />} />
 					<Route path="/index" element={<LandingPage />} />
 					{/* music pages */}
-					<Route path="/musik" element={<Musik />} />
+					<Route path="/alat" element={<Musik />} />
 					{/* sejarah */}
-					<Route path="/sejarah" element={<Sejarah />} />
+					<Route path="/introduction" element={<Introduction />} />
+					{/* kamus */}
+					<Route path="/kamus" element={<Kamus />} />
+					{/* Kartu Keberuntungan */}
+					<Route path="/kartu" element={<KartuKeberuntungan />} />
+					{/* live chat */}
+					<Route path="/chat" element={<LiveChat />} />
 					{/* notfound */}
 					<Route path="*" element={<NotFound />} />
 				</Routes>

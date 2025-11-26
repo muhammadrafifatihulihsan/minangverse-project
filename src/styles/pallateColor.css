@@ -1,0 +1,116 @@
+/* ============================================================
+   MINANGVERSE BRAND COLOR SYSTEM (AMAN & UNIK)
+   Prefix variable : --mv-
+   Prefix class    : .mv-
+   ============================================================ */
+
+:root {
+	/* Neutral */
+	--mv-light: #f5f5f5;
+	--mv-white: #ffffff;
+	/* --testing: #271b0d; */
+
+	/* Primary Reds */
+	--mv-red-main: #a00b0b;
+	--mv-red-700: #971616;
+	--mv-red-600: #890808;
+	--mv-red-500: #600b0b;
+	--mv-red-dark: #570808;
+
+	/* Golds / Accent */
+	--mv-gold-soft: #fef3d2;
+	--mv-gold-1: #ffe957;
+	--mv-gold-2: #f9b153;
+	--mv-gold-3: #f9855b;
+	--mv-gold-accent: #e7c54c;
+}
+
+/* ============================================================
+   CUSTOM UTILITY CLASSES (PREFIKS UNIK)
+   ============================================================ */
+
+/* Backgrounds */
+.mv-bg-light {
+	background-color: var(--mv-light) !important;
+}
+.mv-bg-red-main {
+	background-color: var(--mv-red-main) !important;
+}
+.mv-bg-red-600 {
+	background-color: var(--mv-red-600) !important;
+}
+.mv-bg-red-500 {
+	background-color: var(--mv-red-500) !important;
+}
+.mv-bg-gold-soft {
+	background-color: var(--mv-gold-soft) !important;
+}
+
+/* Text Colors */
+.mv-text-main {
+	color: var(--mv-red-main) !important;
+}
+.mv-text-red-700 {
+	color: var(--mv-red-700) !important;
+}
+.mv-text-red-dark {
+	color: var(--mv-red-dark) !important;
+}
+.mv-text-light {
+	color: var(--mv-light) !important;
+}
+
+/* Gradient Text Gold */
+.mv-text-gradient {
+	background: linear-gradient(
+		90deg,
+		var(--mv-gold-1),
+		var(--mv-gold-2),
+		var(--mv-gold-3)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+/* Decoration / underline */
+.mv-decoration-gold {
+	text-decoration-color: var(--mv-gold-accent) !important;
+}
+
+/* Buttons */
+.mv-btn-primary {
+	background-color: var(--mv-red-600);
+	color: var(--mv-light);
+	border-radius: 9999px;
+	padding: 0.55rem 1.3rem;
+	font-weight: 600;
+	transition: 0.25s ease;
+}
+.mv-btn-primary:hover {
+	background-color: var(--mv-red-700);
+}
+
+/* Card badge */
+.mv-badge-gold {
+	background-color: var(--mv-gold-soft);
+	color: var(--mv-red-main);
+	padding: 0.35rem 0.75rem;
+	border-radius: 8px;
+	font-weight: 600;
+}
+
+/* Drop shadow */
+.mv-shadow-white {
+	box-shadow: 2px 2px 4px var(--mv-white);
+}
+
+/* Helpers */
+.mv-center {
+	text-align: center !important;
+}
+.mv-flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

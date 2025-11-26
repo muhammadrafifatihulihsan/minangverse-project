@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import alatMusik from "../../data/dummy/alatMusik";
 import Navbar from "../../components/Internal/Navbar";
-import "../../components/Internal/styling/alatMusik.css";
+import "../../components/Internal/styling/AlatMusik.css";
 
 const Musik = () => {
 	return (
